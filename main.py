@@ -113,10 +113,6 @@ class App:
                 if event.type==KEYDOWN:
                     if event.key==K_TAB:
                         self.play=False
-                    elif event.key==K_RIGHT:
-                        self.paddle_set.set_paddle_target(1)
-                    elif event.key==K_LEFT:
-                        self.paddle_set.set_paddle_target(-1)
             #--------------------------------------------------------------
             self.action()
             self.render()
